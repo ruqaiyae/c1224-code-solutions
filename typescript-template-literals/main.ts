@@ -15,7 +15,7 @@ console.log('Bio:', bio);
 const fruit: string = 'apple';
 const item: string = 'pen';
 
-const applePen: string = `${fruit} ${item}`;
+const applePen: string = `${fruit}${item}`;
 
 console.log('I have a', item);
 console.log('I have an', fruit);
