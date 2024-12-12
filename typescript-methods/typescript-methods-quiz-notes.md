@@ -5,7 +5,7 @@
 Answer the following questions in the provided markdown file before turning in this exercise:
 
 - Why do we log things to the console?
-  By calling the log method of the console object.
+  For debugging purposes, to check if the data matches our expectations. We can log things by calling the log method of the console object.
 
 - What is a method?
   A method refers to a function that is attached to an object in the form of a property.
@@ -41,7 +41,7 @@ Answer the following questions in the provided markdown file before turning in t
   Object.keys()
 
 - How do you get a collection of an objects values?
-  Objects.values()
+  Object.values()
 
 - How do you get a collection of both an objects keys and values?
   Object.entries()
