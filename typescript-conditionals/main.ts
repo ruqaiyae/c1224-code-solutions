@@ -22,7 +22,7 @@ function isUnderFive(number: number): boolean {
 }
 
 function isEven(number: number): boolean {
-  if (number % 2) {
+  if (number % 2 === 0) {
     return true;
   }
   return false;
