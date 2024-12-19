@@ -1,0 +1,38 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+p.title {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+#button {
+  padding: 5px 12px;
+}
+
+#button:hover {
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}
+
+td {
+  font-size: 1.2rem;
+  padding: 3px;
+}
+
+#head {
+  background-color: black;
+  color: white;
+  text-align: center;
+  font-weight: bold;
+}
+
+tr:nth-child(odd) {
+  background-color: lightgray;
+}
