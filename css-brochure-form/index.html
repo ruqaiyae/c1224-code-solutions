@@ -14,22 +14,30 @@
     <div class="hiring-form">
       <form class="hiring-info">
         <fieldset>
-          <legend>Company email</legend>
-          <input type="text" name="email" placeholder="sally@company.co" />
+          <label for="email">Company email</label>
+          <input
+            type="text"
+            id="email"
+            name="email"
+            placeholder="sally@company.co" />
         </fieldset>
         <fieldset>
-          <legend>Name</legend>
-          <input type="text" name="name" placeholder="Sally Smith" />
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" placeholder="Sally Smith" />
         </fieldset>
         <fieldset>
-          <legend>Where are you hiring?</legend>
-          <input type="text" name="location" placeholder="City, Country" />
+          <label for="location">Where are you hiring?</label>
+          <input
+            type="text"
+            id="location"
+            name="location"
+            placeholder="City, Country" />
         </fieldset>
         <fieldset>
-          <legend>
+          <label for="engineer-count">
             How many engineers are you hiring in the next 6 months?
-          </legend>
-          <select name="count">
+          </label>
+          <select id="engineer-count" name="count">
             <option value="1-2">1-2 Engineers</option>
             <option value="3-6">3-6 Engineers</option>
             <option value="7-10">7-10 Engineers</option>
