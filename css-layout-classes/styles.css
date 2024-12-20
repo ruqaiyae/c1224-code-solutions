@@ -1,0 +1,39 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+  font-family: Roboto, sans-serif;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.row {
+  display: flex;
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+h2 {
+  font-size: 2.5rem;
+}
+
+img {
+  height: 28rem;
+}
+
+article {
+  font-size: 1.55em;
+}
+
+.row-two-image {
+  width: 20rem;
+  height: 18rem;
+  margin: 2rem 0;
+}
