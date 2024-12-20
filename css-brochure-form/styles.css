@@ -1,0 +1,73 @@
+html {
+  font-size: 10px;
+}
+
+h2 {
+  font-family: 'Brandon Grotesque', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 450;
+  text-align: center;
+  color: rgb(238, 112, 108);
+}
+
+div.hiring-form {
+  width: 360px;
+  margin: 0 auto;
+}
+
+form.hiring-info > fieldset {
+  border: none;
+  margin-top: 8px;
+  padding-top: 3px;
+  padding-bottom: 1px;
+}
+
+form.hiring-info label {
+  font-family: 'Brandon Grotesque', sans-serif;
+  font-size: 1.03rem;
+  font-weight: 430;
+  color: rgb(30, 30, 30);
+  text-transform: uppercase;
+  margin-left: 8px;
+}
+
+form.hiring-info input {
+  font-family: AtlasGrotesk, sans-serif;
+  font-size: 1.3rem;
+  width: 110%;
+  height: 37px;
+  padding-left: 10px;
+  margin-top: 3px;
+  margin-bottom: 3px;
+  border-radius: 5px;
+  border: 1px solid rgb(187, 190, 189);
+}
+
+form.hiring-info input::placeholder {
+  color: rgb(166, 166, 166);
+}
+
+form.hiring-info select {
+  font-family: 'Brandon Grotesque', sans-serif;
+  font-size: 1.3rem;
+  color: rgb(73, 73, 73);
+  width: 110%;
+  height: 35px;
+  background-color: rgb(241, 241, 241);
+  border-radius: 5px;
+  border: 1px solid rgb(187, 190, 189);
+  margin-top: 3px;
+}
+
+.submit-button {
+  font-family: 'Brandon Grotesque', sans-serif;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  color: rgb(255, 255, 255);
+  background-color: rgb(249, 96, 91);
+  width: 88px;
+  margin: 7px 295px;
+  padding: 6px 17px;
+  border: none;
+  border-radius: 15px;
+}
