@@ -16,6 +16,22 @@ html {
   display: flex;
 }
 
+.column-full {
+  flex-basis: 100%;
+}
+
+.column-one-third {
+  flex-basis: 33.3%;
+}
+
+.column-one-fourth {
+  flex-basis: 25%;
+}
+
+.column-two-thirds {
+  flex-basis: 66.6%;
+}
+
 h1 {
   font-size: 4rem;
 }
@@ -25,15 +41,9 @@ h2 {
 }
 
 img {
-  height: 28rem;
+  width: 100%;
 }
 
 article {
-  font-size: 1.55em;
-}
-
-.row-two-image {
-  width: 20rem;
-  height: 18rem;
-  margin: 2rem 0;
+  font-size: 1.63em;
 }
