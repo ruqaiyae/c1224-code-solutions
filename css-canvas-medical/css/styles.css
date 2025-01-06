@@ -4,8 +4,9 @@
 
 .cover-page {
   background-image: url('../images/hero.jpg');
+  background-size: cover;
   margin-top: 7rem;
-  height: 100%;
+  height: 101.5rem;
 }
 
 .overlay {
@@ -14,21 +15,23 @@
 }
 
 .get-started {
-  font-size: 2rem;
   color: rgb(255, 255, 255);
   padding-left: 9rem;
 }
 
 #get-started-title {
-  font-size: 5rem;
   font-family: 'Tiempos Headline', serif;
+  font-size: 8rem;
+  font-weight: 200;
   padding-top: 8rem;
+  padding-right: 10rem;
 }
 
 #get-started-textbox {
   font-family: Avenir, sans-serif;
-  line-height: 3.6rem;
-  padding-right: 2rem;
+  font-size: 3rem;
+  line-height: 3.9rem;
+  padding-right: 22rem;
 }
 
 .get-started-button {
