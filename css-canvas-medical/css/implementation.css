@@ -1,0 +1,77 @@
+* {
+  box-sizing: border-box;
+}
+
+.display-flex {
+  display: flex;
+}
+
+.banner {
+  background-image: url('../images/implementation/implementation-header.jpg');
+  margin-top: 7rem;
+  height: 90rem;
+}
+
+.overlay {
+  width: 100%;
+  background: rgba(115, 115, 115, 0.4);
+}
+
+.banner-content {
+  font-size: 2rem;
+  color: rgb(255, 255, 255);
+  padding-left: 9rem;
+}
+
+h3#banner-title {
+  font-size: 5rem;
+  font-family: 'Tiempos Headline', serif;
+  font-weight: 300;
+  padding-top: 25rem;
+}
+
+#banner-textbox {
+  font-family: Avenir, sans-serif;
+  line-height: 180%;
+  padding-right: 2rem;
+  padding-bottom: 20rem;
+}
+
+.content-container {
+  max-width: 50%;
+  margin: 0 auto;
+}
+
+.content-title {
+  font-family: 'Tiempos Headline', serif;
+  color: rgb(110, 110, 110);
+  font-size: 4.2rem;
+  font-weight: 300;
+  margin: 16rem 0 9rem;
+}
+
+.numbering {
+  font-family: 'Tiempos Headline', serif;
+  font-size: 4rem;
+  font-weight: 500;
+}
+
+.sub-heading {
+  color: rgb(110, 110, 110);
+  font-family: Avenir, sans-serif;
+  font-size: 2.5rem;
+  font-weight: 100;
+  margin: 0 3rem;
+}
+
+.content-body {
+  color: rgb(110, 110, 110);
+  font-family: Avenir, sans-serif;
+  font-size: 2rem;
+  line-height: 3.2rem;
+  margin: 3rem 6rem 7rem 3rem;
+}
+
+.section-end {
+  margin: 21rem 0 0;
+}

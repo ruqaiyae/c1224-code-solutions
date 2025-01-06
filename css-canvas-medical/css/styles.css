@@ -1,0 +1,81 @@
+.display-flex {
+  display: flex;
+}
+
+.cover-page {
+  background-image: url('../images/hero.jpg');
+  margin-top: 7rem;
+  height: 100%;
+}
+
+.overlay {
+  height: 100%;
+  background: rgba(115, 115, 115, 0.3);
+}
+
+.get-started {
+  font-size: 2rem;
+  color: rgb(255, 255, 255);
+  padding-left: 9rem;
+}
+
+#get-started-title {
+  font-size: 5rem;
+  font-family: 'Tiempos Headline', serif;
+  padding-top: 8rem;
+}
+
+#get-started-textbox {
+  font-family: Avenir, sans-serif;
+  line-height: 3.6rem;
+  padding-right: 2rem;
+}
+
+.get-started-button {
+  background-color: rgb(47, 67, 97);
+  color: rgb(255, 255, 255);
+  font-size: 2.5rem;
+  padding: 2rem 5rem;
+  border: 0 none;
+  border-radius: 0.5rem;
+  margin-top: 3rem;
+  margin-bottom: 10rem;
+}
+
+.locations {
+  background-color: rgb(250, 250, 250);
+  margin-top: 7rem;
+  border-bottom: 0.2rem solid rgb(237, 238, 241);
+}
+
+#location-title {
+  font-family: 'Tiempos Headline', serif;
+  color: rgb(110, 110, 110);
+  font-size: 4rem;
+  text-align: center;
+  padding-top: 7rem;
+  margin-bottom: 3rem;
+}
+
+#location-textbox {
+  font-family: Avenir, sans-serif;
+  color: rgb(110, 110, 110);
+  font-size: 2rem;
+  text-align: center;
+  max-width: 35%;
+  margin: auto;
+  line-height: 3.5rem;
+}
+
+.locations-container {
+  margin: 5rem 14rem 8rem 12rem;
+  padding-bottom: 1rem;
+}
+
+.location {
+  font-family: Avenir, sans-serif;
+  font-size: 2.5rem;
+  text-align: center;
+  color: rgb(110, 110, 110);
+  padding-top: 3rem;
+}

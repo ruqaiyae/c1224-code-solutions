@@ -1,0 +1,87 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+.container {
+  max-width: 90%;
+  margin: 0 auto;
+  display: flex;
+}
+
+.column-full {
+  flex-basis: 100%;
+}
+
+.column-half {
+  flex-basis: 50%;
+}
+
+.column-one-fourth {
+  flex-basis: 25%;
+}
+
+.column-one-third {
+  flex-basis: calc(100% / 3);
+}
+
+.column-two-thirds {
+  flex-basis: calc(200% / 3);
+}
+
+.column-one-fifth {
+  flex-basis: calc((200% / 3) / 5);
+}
+
+.header-row {
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+}
+
+.logo {
+  width: 20rem;
+}
+
+.nav-bar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: end;
+}
+
+.nav {
+  color: rgb(166, 166, 166);
+  font-size: 2rem;
+}
+
+button.contact-us {
+  padding: 1.5rem;
+  font-size: 2rem;
+  color: rgb(255, 255, 255);
+  background-color: rgb(47, 67, 97);
+  border: none;
+  border-radius: 1rem;
+}
+
+hr.nav-bar-hr {
+  background-color: rgb(231, 233, 236);
+  height: 1.5px;
+  border: 0;
+}
+
+.hyperlink {
+  color: rgb(166, 166, 166);
+  text-decoration: none;
+}
+
+.hyperlink :hover {
+  cursor: pointer;
+}
+
+.hyperlink-button {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
