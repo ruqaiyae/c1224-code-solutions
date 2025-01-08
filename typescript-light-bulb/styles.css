@@ -1,0 +1,39 @@
+* {
+  box-sizing: border-box;
+}
+
+.background-light {
+  height: 100vh;
+  width: 100vw;
+  background-color: rgb(253, 248, 239);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bulb-on {
+  width: 250px;
+  height: 250px;
+  background-color: rgb(247, 233, 121);
+  border: none;
+  border-radius: 50%;
+  box-shadow: 0 0 20px 10px rgb(253, 247, 224);
+  cursor: pointer;
+}
+
+.bulb-off {
+  width: 250px;
+  height: 250px;
+  background-color: rgb(33, 33, 33);
+  border-radius: 50%;
+  box-shadow: 0 -8px 0 8px rgb(12, 12, 12);
+}
+
+.background-dark {
+  height: 100vh;
+  width: 100vw;
+  background-color: rgb(18, 18, 18);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
