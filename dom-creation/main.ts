@@ -91,7 +91,7 @@ function renderPokemon(pokemon: Pokemon): HTMLDivElement {
   $heading.textContent = pokemon.name;
 
   const $num = document.createElement('h3');
-  $num.textContent = pokemon.number;
+  $num.textContent = '#' + pokemon.number;
 
   const $description = document.createElement('p');
   $description.textContent = pokemon.description;

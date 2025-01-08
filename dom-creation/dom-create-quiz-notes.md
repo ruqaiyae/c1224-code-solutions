@@ -16,16 +16,19 @@ Answer the following questions in the provided markdown file before turning in t
 - What steps do you need to take in order to insert a new element into the page?
   We declare a variable that we would like to store our new element in.
   We then call the createElement method of the document object with one argument. The argument is the name of the element we want to create.
+  Give it content with the textContent method.
+  Finally we append it with append or appendChild method. We can also prepend it.
 
 - What is the `textContent` property of an element object for?
   The textContent property represents the text content of an element and all it's descendants. It is a getter/setter.
 
 - Name two ways to set the `class` attribute of a DOM element.
   "className" property
-  "setAttribute" property
+  "setAttribute" method
 
 - What are two advantages of defining a function to do create something (like the work of creating a DOM tree)?
-  Functions are reusable blocks of code. Defining a function makes it easier to turn data from objects into a similar HTML structure and add those new elements to the page.
+  Reusability - Functions are reusable blocks of code. Defining a function makes it easier to turn data from objects into a similar HTML structure and add those new elements to the page.
+  Maintainability - Functions are easier to maintain since we only need to update our code once in the function.
 
 ## Notes
 
