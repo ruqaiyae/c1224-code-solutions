@@ -1,40 +1,42 @@
-* {
-  box-sizing: border-box;
-}
-
-.display-flex {
-  display: flex;
-}
-
 .banner {
   background-image: url('../images/product/product-header.jpg');
-  margin-top: 7rem;
-  width: 100%;
+  background-size: cover;
+  background-position: 0 -5rem;
+  height: 90vh;
+  width: 90vw;
+  margin: 7rem auto 10rem;
 }
 
 .overlay {
-  width: 100%;
+  height: 100%;
   background: rgba(115, 115, 115, 0.4);
 }
 
-.banner-content {
-  font-size: 2rem;
+.text-container {
+  justify-content: center;
+  align-items: center;
+}
+
+.textbox {
   color: rgb(255, 255, 255);
   padding-left: 9rem;
 }
 
-h3#banner-title {
-  font-size: 5rem;
+h3.title {
   font-family: 'Tiempos Headline', serif;
-  font-weight: 300;
-  padding-top: 25rem;
+  font-size: 6rem;
+  font-weight: 200;
+  width: 90rem;
+  padding-right: 10rem;
+  margin-bottom: 0;
 }
 
-#banner-textbox {
+.text-content {
   font-family: Avenir, sans-serif;
-  line-height: 180%;
-  padding-right: 2rem;
-  padding-bottom: 20rem;
+  font-size: 2.3rem;
+  line-height: 4rem;
+  width: 113rem;
+  padding-right: 39rem;
 }
 
 .content-container {

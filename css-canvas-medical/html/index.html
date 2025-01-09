@@ -13,56 +13,56 @@
   </head>
   <body>
     <!-- Header Section -->
-    <section class="header-row container">
-      <div class="column-half">
+    <section class="header-row-container display-flex">
+      <div class="column-one-third">
         <a href="#">
           <img class="logo" src="../images/logo-blue.svg" alt="canvas" />
         </a>
       </div>
-      <div class="nav-bar column-half">
-        <div class="nav">
-          <a href="./product.html" class="hyperlink"> Product</a>
-        </div>
-        <div class="nav">
-          <a href="./implementation.html" class="hyperlink"> Implementation </a>
-        </div>
-        <div class="nav">
-          <a href="./about-us.html" class="hyperlink"> About Us </a>
-        </div>
-        <div class="nav">
-          <a href="./blog.html" class="hyperlink"> Blog </a>
-        </div>
-        <div class="nav">
-          <button class="contact-us">
-            <a href="./contact-us.html" class="hyperlink-button">
-              Contact Us
+      <nav>
+        <ul class="nav-bar column-two-thirds display-flex">
+          <li class="nav">
+            <a href="./product.html" class="hyperlink"> Product</a>
+          </li>
+          <li class="nav">
+            <a href="./implementation.html" class="hyperlink">
+              Implementation
             </a>
-          </button>
-        </div>
-      </div>
+          </li>
+          <li class="nav">
+            <a href="./about-us.html" class="hyperlink"> About Us </a>
+          </li>
+          <li class="nav">
+            <a href="./blog.html" class="hyperlink"> Blog </a>
+          </li>
+          <li class="nav">
+            <button class="contact-us">
+              <a href="./contact-us.html" class="hyperlink-button">
+                Contact Us
+              </a>
+            </button>
+          </li>
+        </ul>
+      </nav>
     </section>
     <hr class="nav-bar-hr" />
 
     <!-- Banner Section -->
     <section class="banner container">
-      <div class="cover-page-container">
-        <div class="cover-image">
-          <div class="overlay display-flex">
-            <div class="get-started column-two-thirds">
-              <h3 id="get-started-title">
-                The EMR Reimagined for Primary Care
-              </h3>
-              <p id="get-started-textbox">
-                Can't remember the last time you talked with a patient without
-                focusing on the EMR? Canvas lets you rediscover joy in the work
-                you do. Capture meaningful data, identify gaps in care, and move
-                seamlessly between tasks within the platform. You stay present
-                with patients while your whole care team stays up-to-speed. Be a
-                better doctor with Canvas, designed for primary care providers
-                with the help of primary care providers.
-              </p>
-              <button class="get-started-button">Get Started</button>
-            </div>
+      <div class="overlay display-flex">
+        <div class="text-container display-flex">
+          <div class="textbox column-two-thirds">
+            <h3 class="title">The EMR Reimagined for Primary Care</h3>
+            <p class="text-content">
+              Can't remember the last time you talked with a patient without
+              focusing on the EMR? Canvas lets you rediscover joy in the work
+              you do. Capture meaningful data, identify gaps in care, and move
+              seamlessly between tasks within the platform. You stay present
+              with patients while your whole care team stays up-to-speed. Be a
+              better doctor with Canvas, designed for primary care providers
+              with the help of primary care providers.
+            </p>
+            <button class="get-started-btn">Get Started</button>
           </div>
         </div>
       </div>
@@ -76,63 +76,74 @@
         made Canvas the fabric of their care.
       </p>
       <div class="display-flex">
-        <div class="column-half">
-          <p class="location">Cascade Family Practice, Portland OR</p>
-          <p class="location">Temescal Creek Medicine, Oakland CA</p>
-          <p class="location">San Juan Healthcare, Friday Harbor WA</p>
-        </div>
-        <div class="column-half">
-          <p class="location">Ward Medical Clinic, Bonifay FL</p>
-          <p class="location">Caribou Medical, Towanda PA</p>
-          <p class="location">Bay Tree Family Care, Red Bay AL</p>
-        </div>
+        <ul class="column-half location">
+          <li>Cascade Family Practice, Portland OR</li>
+          <li>Temescal Creek Medicine, Oakland CA</li>
+          <li>San Juan Healthcare, Friday Harbor WA</li>
+        </ul>
+        <ul class="column-half location">
+          <li>Ward Medical Clinic, Bonifay FL</li>
+          <li>Caribou Medical, Towanda PA</li>
+          <li>Bay Tree Family Care, Red Bay AL</li>
+        </ul>
       </div>
     </section>
 
     <!-- Footer Section -->
-    <div class="footer">
-      <section class="learn-more">
-        <div class="learn-more-text column-half">
-          <h4 class="learn-more-title">Ready to learn more?</h4>
-          <p class="learn-more-textbox">Schedule a private meeting now</p>
+    <section class="display-flex">
+      <div class="learn-more-text column-half">
+        <h4 class="learn-more-title">Ready to learn more?</h4>
+        <p class="learn-more-textbox">Schedule a private meeting now</p>
+      </div>
+      <div class="learn-more-btn-container display-flex column-half">
+        <button class="learn-more-btn">Get Started</button>
+      </div>
+    </section>
+    <section class="info display-flex">
+      <div class="info-container column-half">
+        <img class="info-logo" src="../images/logo-white.png" alt="canvas" />
+        <div class="address">
+          <p>
+            2307 Irving Street, Suite 228
+            <br />
+            San Francisco CA 94122
+            <br />
+            (800) 370-1416
+            <br />
+            info@canvasmedical.com
+          </p>
         </div>
-        <div class="learn-more-button column-half">
-          <button class="learn-more-blue-button">Get Started</button>
-        </div>
-      </section>
-      <section class="info">
-        <div class="info-address">
-          <img class="info-logo" src="../images/logo-white.png" alt="canvas" />
-          <div class="address">
-            <p>2307 Irving Street, Suite 228</p>
-            <p>San Francisco CA 94122</p>
-            <p>(800) 370-1416</p>
-            <p>info@canvasmedical.com</p>
-          </div>
-        </div>
-        <div class="company">
+      </div>
+      <div class="info-container-2 column-half display-flex">
+        <div class="company column-half">
           <p>COMPANY</p>
-          <p><a href="./about-us.html" class="footer-link"> About Us </a></p>
-          <p><a href="./blog.html" class="footer-link"> Blog </a></p>
+          <ul class="info-list">
+            <li>
+              <a href="./about-us.html" class="footer-link"> About Us </a>
+            </li>
+            <li><a href="./blog.html" class="footer-link"> Blog </a></li>
+          </ul>
         </div>
-        <div class="product">
+        <div class="product column-half">
           <p>PRODUCT</p>
-          <p>
-            <a href="./product.html" class="footer-link"> Product </a>
-          </p>
-          <p>
-            <a href="./implementation.html" class="footer-link">
-              Implementation
-            </a>
-          </p>
-          <p>For Health Plans</p>
-          <p>Security</p>
+          <ul class="info-list">
+            <li>
+              <a href="./product.html" class="footer-link"> Product </a>
+            </li>
+            <li>
+              <a href="./implementation.html" class="footer-link">
+                Implementation
+              </a>
+            </li>
+            <li>For Health Plans</li>
+            <li>Security</li>
+          </ul>
         </div>
-      </section>
-      <footer>
-        <p class="terms">Privacy &amp; Terms</p>
-        <p class="contact">Contact Us</p>
-      </footer>
-    </div>
+      </div>
+    </section>
+    <footer class="display-flex">
+      <p class="terms">Privacy &amp; Terms</p>
+      <p class="contact">Contact Us</p>
+    </footer>
   </body>
 </html>
