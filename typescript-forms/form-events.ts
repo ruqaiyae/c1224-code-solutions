@@ -16,21 +16,15 @@ function handleInput(event: Event): void {
   console.log('value: ', eventTarget.value);
 }
 
-const $userName = document.querySelector('#user-name') as
-  | HTMLInputElement
-  | HTMLTextAreaElement;
+const $userName = document.querySelector('#user-name');
 
 if (!$userName) throw new Error('$userName query failed.');
 
-const $userEmail = document.querySelector('#user-email') as
-  | HTMLInputElement
-  | HTMLTextAreaElement;
+const $userEmail = document.querySelector('#user-email');
 
 if (!$userEmail) throw new Error('$userName query failed.');
 
-const $userMessage = document.querySelector('#user-message') as
-  | HTMLInputElement
-  | HTMLTextAreaElement;
+const $userMessage = document.querySelector('#user-message');
 
 if (!$userMessage) throw new Error('$userName query failed.');
 
