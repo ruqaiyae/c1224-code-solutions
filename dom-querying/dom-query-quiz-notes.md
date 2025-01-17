@@ -20,8 +20,7 @@ Answer the following questions in the provided markdown file before turning in t
   It is representation of html elements as tree structure.
 
 - Give two examples of `document` methods that retrieve a single element from the DOM.
-  querySelector(selector)
-  getElementById(id)
+  querySelector(selector) and getElementById(id)
 
 - Give one example of a `document` method that retrieves multiple elements from the DOM at once.
   querySelectorAll(selector)
