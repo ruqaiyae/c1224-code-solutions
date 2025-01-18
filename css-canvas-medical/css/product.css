@@ -1,0 +1,131 @@
+.banner {
+  background-image: url('../images/product/product-header.jpg');
+  background-size: cover;
+  background-position: 0 -5rem;
+  height: 90vh;
+  width: 90vw;
+  margin: 7rem auto 10rem;
+}
+
+.overlay {
+  height: 100%;
+  background: rgba(115, 115, 115, 0.4);
+}
+
+.text-container {
+  justify-content: center;
+  align-items: center;
+}
+
+.textbox {
+  color: rgb(255, 255, 255);
+  padding-left: 9rem;
+}
+
+h3.title {
+  font-family: 'Tiempos Headline', serif;
+  font-size: 6rem;
+  font-weight: 200;
+  width: 90rem;
+  padding-right: 10rem;
+  margin-bottom: 0;
+}
+
+.text-content {
+  font-family: Avenir, sans-serif;
+  font-size: 2.3rem;
+  line-height: 4rem;
+  width: 113rem;
+  padding-right: 39rem;
+}
+
+.content-container {
+  max-width: 100%;
+  background-color: rgb(250, 250, 250);
+  margin-top: 7rem;
+  padding-right: 10rem;
+}
+
+.product-image-container {
+  padding: 10rem 0 9rem 9rem;
+}
+
+.product-image {
+  width: 100%;
+}
+
+.content-title {
+  font-family: 'Tiempos Headline', serif;
+  color: rgb(110, 110, 110);
+  font-size: 4.2rem;
+  font-weight: 300;
+  padding: 18rem 0 0 18rem;
+  margin: 0;
+}
+
+.content-body {
+  color: rgb(110, 110, 110);
+  font-family: Avenir, sans-serif;
+  font-size: 2.3rem;
+  line-height: 3.2rem;
+  padding-left: 18rem;
+  padding-top: 1rem;
+}
+
+.content-learn-more {
+  padding-left: 18rem;
+  padding-bottom: 1rem;
+  color: rgb(80, 111, 133);
+  font-family: Avenir, sans-serif;
+  font-size: 2.3rem;
+}
+
+.content-quote {
+  padding-left: 18rem;
+  color: rgb(110, 110, 110);
+  font-size: 2.3rem;
+  font-style: italic;
+  line-height: 2.9rem;
+  font-weight: 550;
+}
+
+.author {
+  padding-left: 18rem;
+  color: rgb(110, 110, 110);
+  font-family: Avenir, sans-serif;
+  font-size: 2.3rem;
+}
+
+.content-title-2 {
+  font-family: 'Tiempos Headline', serif;
+  color: rgb(110, 110, 110);
+  font-size: 4.2rem;
+  font-weight: 300;
+  padding: 10rem 0 0 18rem;
+  margin: 0;
+}
+
+.product-image2-container {
+  padding: 8rem 0 1rem 9rem;
+}
+
+.product-image-2 {
+  height: 100%;
+}
+
+.product-image3-container {
+  padding: 15rem 0 14rem 9rem;
+}
+
+.product-image-3 {
+  width: 103%;
+}
+
+.content-title-3 {
+  font-family: 'Tiempos Headline', serif;
+  color: rgb(110, 110, 110);
+  font-size: 4.2rem;
+  font-weight: 300;
+  padding: 10rem 0 0 18rem;
+  margin: 0;
+}

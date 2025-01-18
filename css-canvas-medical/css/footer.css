@@ -1,0 +1,90 @@
+.learn-more-text {
+  padding-left: 13rem;
+  margin-bottom: 3rem;
+}
+
+.learn-more-title {
+  font-family: 'Tiempos Headline', serif;
+  font-size: 4rem;
+  font-weight: 100;
+  color: rgb(110, 110, 110);
+  margin-bottom: 0;
+}
+
+.learn-more-textbox {
+  font-family: Avenir, sans-serif;
+  font-size: 2rem;
+  color: rgb(126, 126, 126);
+}
+
+.learn-more-btn-container {
+  justify-content: end;
+  margin-bottom: 10rem;
+  margin-right: 15rem;
+}
+
+.learn-more-btn {
+  background-color: rgb(47, 67, 97);
+  color: rgb(255, 255, 255);
+  font-size: 2.5rem;
+  padding: 2rem 6rem;
+  border: 0 none;
+  border-radius: 0.5rem;
+  margin-top: 7rem;
+}
+
+.info {
+  background-color: rgb(82, 83, 81);
+  color: rgb(255, 255, 255);
+  font-family: Avenir, sans-serif;
+  padding-bottom: 10rem;
+}
+
+.info-container {
+  padding-left: 13rem;
+}
+
+.info-logo {
+  padding-top: 15rem;
+  height: 18.5rem;
+}
+
+.address {
+  font-size: 2rem;
+  line-height: 3.5rem;
+  margin-top: 5rem;
+}
+
+.info-container-2 {
+  margin-top: 13rem;
+  margin-left: 30rem;
+  font-size: 2.3rem;
+}
+
+.info-list {
+  list-style-type: none;
+  padding-left: 0;
+  line-height: 5rem;
+}
+
+.footer-link {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+
+footer {
+  padding: 3rem 13rem;
+  font-family: Avenir, sans-serif;
+  font-size: 2rem;
+  color: rgb(100, 100, 100);
+  background-color: rgb(250, 250, 250);
+}
+
+.foot-link {
+  color: rgb(100, 100, 100);
+  text-decoration: none;
+}
+
+.terms {
+  padding-right: 5rem;
+}
