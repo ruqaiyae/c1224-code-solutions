@@ -15,6 +15,11 @@ function getRangeReport(start, end) {
     range.push(i);
     average = total / range.length;
   }
+  console.log('total: ', total);
+  console.log('odds: ', odds);
+  console.log('evens: ', evens);
+  console.log('range: ', range);
+  console.log('average: ', average);
   const rangeObj = {
     total,
     odds,
