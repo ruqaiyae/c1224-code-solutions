@@ -1,0 +1,45 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0 auto;
+  font-size: 10px;
+}
+
+.hidden {
+  display: none;
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.col-third {
+  flex-basis: calc(100 / 3);
+}
+
+.img-row {
+  flex-basis: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 20rem;
+}
+
+.angle {
+  cursor: pointer;
+}
+
+.progress-row {
+  flex-basis: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.circle {
+  margin-left: 3rem;
+  cursor: pointer;
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TypeScript Carousel</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="row img-row">
+        <div class="col-third">
+          <i class="fa-solid fa-angle-left fa-7x angle"></i>
+        </div>
+        <div class="col-third">
+          <div class="img">
+            <img src="images/025.png" alt="Pikachu" class="images" />
+            <img
+              src="images/001.png"
+              alt="Some Pokemon"
+              class="images hidden" />
+            <img
+              src="images/004.png"
+              alt="Some Pokemon"
+              class="images hidden" />
+            <img
+              src="images/007.png"
+              alt="Some Pokemon"
+              class="images hidden" />
+            <img
+              src="images/039.png"
+              alt="Some Pokemon"
+              class="images hidden" />
+          </div>
+        </div>
+        <div class="col-third">
+          <i class="fa-solid fa-angle-right fa-7x angle"></i>
+        </div>
+      </div>
+
+      <div class="row progress-row">
+        <i class="fa-solid fa-circle fa-2xl circle"></i>
+        <i class="fa-regular fa-circle fa-2xl circle"></i>
+        <i class="fa-regular fa-circle fa-2xl circle"></i>
+        <i class="fa-regular fa-circle fa-2xl circle"></i>
+        <i class="fa-regular fa-circle fa-2xl circle"></i>
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
