@@ -3,29 +3,25 @@ import './Button.css';
 
 export function Button() {
   const [count, setCount] = useState(0);
-  const [color, setColor] = useState('indigo');
 
-  function handleClick() {
-    setCount(count + 1);
-
-    if (count < 2) {
-      setColor('indigo');
-    } else if (count < 5) {
-      setColor('lavender');
-    } else if (count < 8) {
-      setColor('red');
-    } else if (count < 11) {
-      setColor('orange');
-    } else if (count < 14) {
-      setColor('yellow');
-    } else if (count >= 14) {
-      setColor('white');
-    }
+  let color;
+  if (count <= 3) {
+    color = 'indigo';
+  } else if (count <= 6) {
+    color = 'lavender';
+  } else if (count <= 9) {
+    color = 'red';
+  } else if (count <= 12) {
+    color = 'orange';
+  } else if (count <= 15) {
+    color = 'yellow';
+  } else if (count >= 18) {
+    color = 'white';
   }
 
   return (
     <>
-      <button onClick={handleClick} className={color}>
+      <button onClick={() => setCount(count + 1)} className={color}>
         Hot Button
       </button>
       <p>The button was clicked {count} times.</p>
