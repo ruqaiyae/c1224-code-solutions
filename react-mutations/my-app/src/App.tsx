@@ -19,14 +19,14 @@ export function App() {
     setPokedex(
       pokedex.map((pokemon) =>
         pokemon.number === '012'
-          ? { number: '002', name: 'some other Pokemon' }
+          ? { number: '012', name: 'some other Pokemon' }
           : pokemon
       )
     );
   }
 
   function handleRemove(): void {
-    setPokedex(pokedex.filter((pokemon) => pokemon.number !== '002'));
+    setPokedex(pokedex.filter((pokemon) => pokemon.number !== '012'));
   }
 
   return (
