@@ -18,7 +18,7 @@ export function App() {
   function handleUpdate(): void {
     setPokedex(
       pokedex.map((pokemon) =>
-        pokemon.number === '004'
+        pokemon.number === '012'
           ? { number: '002', name: 'some other Pokemon' }
           : pokemon
       )
