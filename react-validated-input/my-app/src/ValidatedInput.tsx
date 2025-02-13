@@ -14,6 +14,25 @@ export function ValidatedInput() {
     errorMessage = '';
   }
 
+  let condition;
+  const digits = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'];
+
+  for (let i = 0; i < digits.length; i++) {
+    if (text.includes(digits[i])) {
+      condition = '';
+      break;
+    } else {
+      condition = <li key="fail"> 'Must include a digit' </li>;
+    }
+  }
+
+  const icon =
+    errorMessage === '' && condition === '' ? (
+      <FaCheck className="icon check-icon" />
+    ) : (
+      <FaTimes className="icon x-icon" />
+    );
+
   return (
     <div className="flex w-full m-12">
       <label>
@@ -27,13 +46,10 @@ export function ValidatedInput() {
             value={text}
             className="w-full input"
           />
-          {text.length < 8 ? (
-            <FaTimes className="icon x-icon" />
-          ) : (
-            <FaCheck className="icon check-icon" />
-          )}
+          {icon}
         </div>
         <p className="errorMessage">{errorMessage}</p>
+        <ul className="errorMessage">{condition}</ul>
       </label>
     </div>
   );
