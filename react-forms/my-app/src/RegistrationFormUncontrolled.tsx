@@ -11,6 +11,7 @@ function handleSubmit(event: FormEvent<HTMLFormElement>) {
 export function RegistrationFormUncontrolled() {
   return (
     <form onSubmit={handleSubmit}>
+      <div>Uncontrolled</div>
       <label>
         <span>Username</span>
         <input type="text" name="username" />
