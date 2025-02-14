@@ -5,33 +5,18 @@ import './ValidateInput.css';
 export function ValidatedInput() {
   const [text, setText] = useState('');
 
-  let errorMessage;
-  if (text.length === 0) {
-    errorMessage = 'A password is required.';
-  } else if (text.length < 8) {
-    errorMessage = 'Your password is too short.';
-  } else {
-    errorMessage = '';
-  }
+  let errorMessage = '';
+  if (text.length === 0) errorMessage = 'A password is required.';
+  else if (text.length < 8) errorMessage = 'Your password is too short.';
+  else if (!text.match(/\d/)) errorMessage = 'Must include a digit';
+  else if (!text.match(/[A-Z]/))
+    errorMessage = 'Must include an uppercase letter';
+  else if (!text.match(/[ `!@#$%^&*()_+\-=[\]{};':"\\|,.<>/?~]/))
+    errorMessage = 'Must include a special character';
 
-  let condition;
-  const digits = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'];
+  const isValid = errorMessage.length === 0;
 
-  for (let i = 0; i < digits.length; i++) {
-    if (text.includes(digits[i])) {
-      condition = '';
-      break;
-    } else {
-      condition = <li key="fail"> 'Must include a digit' </li>;
-    }
-  }
-
-  const icon =
-    errorMessage === '' && condition === '' ? (
-      <FaCheck className="icon check-icon" />
-    ) : (
-      <FaTimes className="icon x-icon" />
-    );
+  const icon = isValid ? <FaCheck color="green" /> : <FaTimes color="red" />;
 
   return (
     <div className="flex w-full m-12">
@@ -49,7 +34,6 @@ export function ValidatedInput() {
           {icon}
         </div>
         <p className="errorMessage">{errorMessage}</p>
-        <ul className="errorMessage">{condition}</ul>
       </label>
     </div>
   );
