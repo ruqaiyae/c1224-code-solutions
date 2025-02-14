@@ -1,0 +1,50 @@
+.flex {
+  display: flex;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.m-12 {
+  margin: 12px;
+}
+
+.text-gray-700 {
+  color: grey;
+  font-weight: 700;
+}
+
+.relative {
+  position: relative;
+}
+
+.w-80 {
+  width: 80%;
+}
+
+.input {
+  padding: 1px 2px 1px 8px;
+  border: solid gray;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.icon {
+  margin-left: 8px;
+}
+
+.x-icon {
+  color: red;
+}
+
+.check-icon {
+  color: green;
+}
+
+.errorMessage {
+  color: red;
+  font-size: 10px;
+}
