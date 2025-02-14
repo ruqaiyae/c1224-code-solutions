@@ -7,6 +7,7 @@ function App() {
   return (
     <>
       <UserForm />
+      <UserForm user={{ username: 'John', password: 'johnknows!123' }} />
     </>
   );
 }
