@@ -1,35 +1,44 @@
+// import { useState } from 'react';
 type Items = {
   items: string[];
 };
 
 export function RotatingBanner({ items }: Items) {
-  const Banner = () => <h3>{items[0]}</h3>;
+  // const [index, setIndex] = useState(0);
 
-  const PrevBtn = () => (
-    <div>
-      <button>Prev</button>
-    </div>
-  );
+  // function Banner() {
+  // return <h3>{items[index]}</h3>;
+  // }
 
-  const Position = () => {
-    const positionBtns = [];
+  function PrevBtn() {
+    return (
+      <div>
+        <button>Prev</button>
+      </div>
+    );
+  }
+
+  function Indicators() {
+    const indicatorsBtns = [];
     for (let i = 0; i < items.length; i++) {
-      positionBtns.push(<button key={items[i]}>{i}</button>);
+      indicatorsBtns.push(<button key={items[i]}>{i}</button>);
     }
-    return positionBtns;
-  };
+    return indicatorsBtns;
+  }
 
-  const NextBtn = () => (
-    <div>
-      <button>Next</button>
-    </div>
-  );
+  function NextBtn() {
+    return (
+      <div>
+        <button>Next</button>
+      </div>
+    );
+  }
 
   return (
     <>
-      <Banner />
+      {/* <Banner /> */}
       <PrevBtn />
-      <Position />
+      <Indicators />
       <NextBtn />
     </>
   );
