@@ -1,19 +1,30 @@
-// import { useState } from 'react';
+import { useState } from 'react';
+
+type Btn = {
+  prev?: string;
+  next?: string;
+};
+
 type Items = {
   items: string[];
 };
 
 export function RotatingBanner({ items }: Items) {
-  // const [index, setIndex] = useState(0);
+  const [index, setIndex] = useState(0);
 
-  // function Banner() {
-  // return <h3>{items[index]}</h3>;
-  // }
+  function Banner() {
+    return <h3>{items[index]}</h3>;
+  }
 
-  function PrevBtn() {
+  function Btn({ prev, next }: Btn) {
+    function handleClick() {
+      prev && setIndex((index - 1 + items.length) % items.length);
+      next && setIndex((index + 1) % items.length);
+    }
+
     return (
       <div>
-        <button>Prev</button>
+        <button onClick={handleClick}>{prev ? 'Prev' : 'Next'}</button>
       </div>
     );
   }
@@ -21,25 +32,24 @@ export function RotatingBanner({ items }: Items) {
   function Indicators() {
     const indicatorsBtns = [];
     for (let i = 0; i < items.length; i++) {
-      indicatorsBtns.push(<button key={items[i]}>{i}</button>);
+      indicatorsBtns.push(
+        <button
+          onClick={() => setIndex(i)}
+          key={items[i]}
+          style={{ backgroundColor: i === index ? 'lightblue' : 'white' }}>
+          {i}
+        </button>
+      );
     }
     return indicatorsBtns;
   }
 
-  function NextBtn() {
-    return (
-      <div>
-        <button>Next</button>
-      </div>
-    );
-  }
-
   return (
     <>
-      {/* <Banner /> */}
-      <PrevBtn />
+      <Banner />
+      <Btn prev={'prev'} />
       <Indicators />
-      <NextBtn />
+      <Btn next={'next'} />
     </>
   );
 }
