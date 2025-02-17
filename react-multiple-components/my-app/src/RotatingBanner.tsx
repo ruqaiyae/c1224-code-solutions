@@ -1,55 +1,74 @@
 import { useState } from 'react';
 
-type Btn = {
-  prev?: string;
-  next?: string;
-};
-
-type Items = {
+type Props = {
   items: string[];
 };
 
-export function RotatingBanner({ items }: Items) {
-  const [index, setIndex] = useState(0);
-
-  function Banner() {
-    return <h3>{items[index]}</h3>;
-  }
-
-  function Btn({ prev, next }: Btn) {
-    function handleClick() {
-      prev && setIndex((index - 1 + items.length) % items.length);
-      next && setIndex((index + 1) % items.length);
-    }
-
-    return (
-      <div>
-        <button onClick={handleClick}>{prev ? 'Prev' : 'Next'}</button>
-      </div>
-    );
-  }
-
-  function Indicators() {
-    const indicatorsBtns = [];
-    for (let i = 0; i < items.length; i++) {
-      indicatorsBtns.push(
-        <button
-          onClick={() => setIndex(i)}
-          key={items[i]}
-          style={{ backgroundColor: i === index ? 'lightblue' : 'white' }}>
-          {i}
-        </button>
-      );
-    }
-    return indicatorsBtns;
-  }
+export function RotatingBanner({ items }: Props) {
+  const [currentIndex, setCurrentIndex] = useState(0);
 
   return (
     <>
-      <Banner />
-      <Btn prev={'prev'} />
-      <Indicators />
-      <Btn next={'next'} />
+      <Banner item={items[currentIndex]} />
+      <Btn
+        label="Prev"
+        onBtnClick={() =>
+          setCurrentIndex((currentIndex - 1 + items.length) % items.length)
+        }
+      />
+      <Indicators
+        count={items.length}
+        selected={currentIndex}
+        onSelect={(index) => setCurrentIndex(index)}
+      />
+      <Btn
+        label="Next"
+        onBtnClick={() => setCurrentIndex((currentIndex + 1) % items.length)}
+      />
     </>
   );
+}
+
+type BannerProp = {
+  item: string;
+};
+
+function Banner({ item }: BannerProp) {
+  return <h1>{item}</h1>;
+}
+
+type BtnProps = {
+  bkg?: string;
+  label: string;
+  onBtnClick: () => void;
+};
+
+function Btn({ bkg, label, onBtnClick }: BtnProps) {
+  return (
+    <button onClick={onBtnClick} style={{ backgroundColor: bkg }}>
+      {label}
+    </button>
+  );
+}
+
+type IndicatorsProps = {
+  count: number;
+  onSelect: (index: number) => void;
+  selected: number;
+};
+
+function Indicators({ count, onSelect, selected }: IndicatorsProps) {
+  const indicatorBtns = [];
+  for (let i = 0; i < count; i++) {
+    indicatorBtns.push(
+      <Btn
+        onBtnClick={() => onSelect(i)}
+        key={i}
+        label={String(i)}
+        bkg={i === selected ? 'lightblue' : undefined}
+      />
+    );
+  }
+
+  return <div>{indicatorBtns}</div>;
 }
