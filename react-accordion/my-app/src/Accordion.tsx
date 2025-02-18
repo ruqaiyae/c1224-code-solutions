@@ -12,9 +12,11 @@ export function Accordion({ topics }: Props) {
     <TopicsCard
       card={topic}
       key={topic.id}
-      display={topic.id === currentID}
-      onTitleClick={(target) =>
-        target === currentID ? setCurrentID(undefined) : setCurrentID(topic.id)
+      hasDisplay={topic.id === currentID}
+      onTitleClick={() =>
+        topic.id === currentID
+          ? setCurrentID(undefined)
+          : setCurrentID(topic.id)
       }
     />
   ));
@@ -24,15 +26,15 @@ export function Accordion({ topics }: Props) {
 
 type CardProps = {
   card: Topic;
-  display?: boolean;
-  onTitleClick: (target: number) => void;
+  hasDisplay?: boolean;
+  onTitleClick: () => void;
 };
 
-function TopicsCard({ card, display, onTitleClick }: CardProps) {
+function TopicsCard({ card, hasDisplay, onTitleClick }: CardProps) {
   return (
     <>
-      <h3 onClick={() => onTitleClick(card.id)}>{card.title}</h3>
-      {display ? <p>{card.content}</p> : undefined}
+      <h3 onClick={() => onTitleClick()}>{card.title}</h3>
+      {hasDisplay && <p>{card.content}</p>}
     </>
   );
 }
