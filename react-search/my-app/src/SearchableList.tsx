@@ -26,7 +26,7 @@ export function SearchableList() {
 
   return (
     <>
-      <SearchBar handleChange={(e) => setText(e.target.value)} text={text} />
+      <SearchBar onSearch={(search) => setText(search)} text={text} />
       <Items filteredQuotes={filteredQuotes} />
     </>
   );
