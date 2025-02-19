@@ -20,13 +20,13 @@ export function Carousel({ images }: Props) {
       setImageIndex((imageIndex + 1) % images.length);
     }, 1000);
     return () => clearTimeout(timerId);
-  }, [setImageIndex, imageIndex, setTimeout, clearTimeout]);
+  }, [imageIndex]);
 
   return (
     <>
       <div className="container">
         <Btn
-          prev="prev"
+          prev
           onBtnClick={() =>
             setImageIndex((imageIndex - 1 + images.length) % images.length)
           }
@@ -35,7 +35,6 @@ export function Carousel({ images }: Props) {
         <ImageDisplay image={images[imageIndex]} />
 
         <Btn
-          next="next"
           onBtnClick={() => setImageIndex((imageIndex + 1) % images.length)}
         />
       </div>
@@ -50,14 +49,13 @@ export function Carousel({ images }: Props) {
 }
 
 type BtnProps = {
-  prev?: string;
-  next?: string;
+  prev?: boolean;
   onBtnClick: () => void;
 };
 
-function Btn({ prev, next, onBtnClick }: BtnProps) {
-  if (prev) return <FaAngleLeft onClick={onBtnClick} className="btn" />;
-  else if (next) return <FaAngleRight onClick={onBtnClick} className="btn" />;
+function Btn({ prev, onBtnClick }: BtnProps) {
+  const Icon = prev ? FaAngleLeft : FaAngleRight;
+  return <Icon onClick={onBtnClick} className="btn" />;
 }
 
 type ImageProp = {
@@ -65,9 +63,7 @@ type ImageProp = {
 };
 
 function ImageDisplay({ image }: ImageProp) {
-  return (
-    <img src={image.src} alt={image.alt} key={image.alt} className="image" />
-  );
+  return <img src={image.src} alt={image.alt} className="image" />;
 }
 
 type dotsProps = {
