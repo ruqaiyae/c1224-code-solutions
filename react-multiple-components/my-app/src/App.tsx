@@ -11,11 +11,7 @@ function App() {
     'Ferret',
   ];
 
-  return (
-    <>
-      <RotatingBanner items={items} />
-    </>
-  );
+  return <RotatingBanner items={items} />;
 }
 
 export default App;
