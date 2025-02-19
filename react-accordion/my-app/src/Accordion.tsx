@@ -8,16 +8,16 @@ type Props = {
 export function Accordion({ topics }: Props) {
   const [currentID, setCurrentID] = useState<number>();
 
+  function handleTitleClick(id: number) {
+    id === currentID ? setCurrentID(undefined) : setCurrentID(id);
+  }
+
   const mappedTopics = topics.map((topic) => (
     <TopicsCard
       card={topic}
       key={topic.id}
       hasDisplay={topic.id === currentID}
-      onTitleClick={() =>
-        topic.id === currentID
-          ? setCurrentID(undefined)
-          : setCurrentID(topic.id)
-      }
+      onTitleClick={() => handleTitleClick(topic.id)}
     />
   ));
 
