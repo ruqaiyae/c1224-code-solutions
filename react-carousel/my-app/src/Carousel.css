@@ -1,0 +1,20 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.image {
+  height: 20rem;
+  width: 20rem;
+}
+
+.btn {
+  height: 2rem;
+}
+
+.dots-container {
+  display: flex;
+  justify-content: space-around;
+  padding: 3rem;
+}
