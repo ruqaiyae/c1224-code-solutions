@@ -28,8 +28,7 @@ export class PriorityQueue<T = unknown> {
    * Returns `undefined` if queue is empty.
    */
   dequeue(): T | undefined {
-    if (!this.nodes.length) return undefined;
-    else return this.nodes.shift()?.data;
+    return this.nodes.shift()?.data;
   }
 
   /**
@@ -37,7 +36,6 @@ export class PriorityQueue<T = unknown> {
    * Returns `undefined` if queue is empty.
    */
   peek(): T | undefined {
-    if (!this.nodes.length) return undefined;
-    else return this.nodes[0]?.data;
+    return this.nodes[0]?.data;
   }
 }
