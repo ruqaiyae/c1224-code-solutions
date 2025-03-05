@@ -16,16 +16,15 @@ app.use(express.json());
 
 app.post('/api/actors', async (req, res, next) => {
   try {
+    const { firstName, lastName } = req.body;
+    if (!firstName) throw new ClientError(400, 'firstName is required');
+    if (!lastName) throw new ClientError(400, 'lastName is required');
     const sql = `
                 insert into "actors" ("firstName", "lastName")
                 values ($1, $2)
                 returning *
                 `;
-    const { firstName, lastName } = req.body;
-    if (!firstName) throw new ClientError(400, 'firstName is required');
-    if (!lastName) throw new ClientError(400, 'lastName is required');
-    const params = [firstName, lastName];
-    const result = await db.query(sql, params);
+    const result = await db.query(sql, [firstName, lastName]);
     const actor = result.rows[0];
     res.status(201).json(actor);
   } catch (err) {
@@ -36,8 +35,6 @@ app.post('/api/actors', async (req, res, next) => {
 app.put('/api/actors/:actorId', async (req, res, next) => {
   try {
     const { actorId } = req.params;
-    if (actorId === undefined)
-      throw new ClientError(400, 'actorId is required');
     if (!Number.isInteger(+actorId))
       throw new ClientError(400, 'actorId must be an integer');
     const sql = `
