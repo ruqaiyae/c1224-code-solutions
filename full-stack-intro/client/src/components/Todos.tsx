@@ -50,7 +50,7 @@ export function Todos() {
       const data = (await response.json()) as Todo;
       setTodos([...todos, data]);
     } catch (err) {
-      console.log(err);
+      alert(err);
     }
   }
 
@@ -76,7 +76,7 @@ export function Todos() {
       });
       setTodos(updatedTodos);
     } catch (err) {
-      console.log(err);
+      alert(err);
     }
   }
 
