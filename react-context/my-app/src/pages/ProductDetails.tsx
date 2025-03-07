@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import { Link, useNavigate, useParams } from 'react-router-dom';
 import { readProduct, type Product, toDollars } from '../lib';
 
-import { UseCart } from '../components/useCart';
+import { useCart } from '../components/useCart';
 
 export function ProductDetails() {
   const { productId } = useParams();
@@ -10,7 +10,7 @@ export function ProductDetails() {
   const [product, setProduct] = useState<Product>();
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState<unknown>();
-  const { addToCart } = UseCart();
+  const { addToCart } = useCart();
 
   useEffect(() => {
     async function loadProduct(productId: number) {
@@ -29,7 +29,7 @@ export function ProductDetails() {
     }
   }, [productId]);
 
-  function handleAddToCart(product: Product) {
+  function handleAddToCart() {
     if (!product) throw new Error('Should never happen');
     addToCart(product);
     navigate('/');
@@ -77,7 +77,7 @@ export function ProductDetails() {
         </div>
       </div>
       <button
-        onClick={() => handleAddToCart(product)}
+        onClick={handleAddToCart}
         className="border border-gray-300 rounded py-1 px-3 mx-10">
         Add to Cart
       </button>

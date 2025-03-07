@@ -11,7 +11,7 @@ const defaultCartValue: CartValue = {
   addToCart: () => undefined,
 };
 
-export const CartContext = createContext(defaultCartValue);
+export const CartContext = createContext<CartValue>(defaultCartValue);
 
 type Props = {
   children: ReactNode;
